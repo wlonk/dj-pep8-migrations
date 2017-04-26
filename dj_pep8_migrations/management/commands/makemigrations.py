@@ -9,9 +9,8 @@ from django.db.migrations.writer import MigrationWriter
 
 class Command(makemigrations.Command):
     def pep8ify(self, string):
-        # AutoPEP8 doesn't actually work well enough, but it's a first
-        # step:
-        return autopep8.fix_code(string, options={'aggressive': 1})
+        # AutoPEP8 isn't perfect, but it's a first step:
+        return autopep8.fix_code(string, options={'aggressive': 2})
 
     def write_migration_files(self, changes):
         """
