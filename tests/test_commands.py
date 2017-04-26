@@ -5,12 +5,10 @@
 test_dj-pep8-migrations
 ------------
 
-Tests for `dj-pep8-migrations` models module.
+Tests for `dj-pep8-migrations` module.
 """
 
 from django.test import TestCase
-
-from dj_pep8_migrations import models
 
 
 class TestDj_pep8_migrations(TestCase):
